@@ -1,0 +1,151 @@
+:root{
+    --first:#f3dcdc;
+    --second:#f4e7fb;
+    --third:#f5bcba;
+    --fourth:#e3aadd;
+    --fifth:#c8a8e9;
+
+}
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+::-webkit-scrollbar{
+    display:initial;
+    height: 4px;
+}
+::-webkit-scrollbar-thumb{
+background-color:var(--third);
+height: 2px;
+width: 2px;
+border-radius: 10px;
+
+}
+::-webkit-scrollbar-track{
+    display: none;
+}
+.main{
+    display: flex;
+    background-color: var(--second);
+    width:100%;
+    height: 100vh;
+    padding:2rem;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.toDo-cointainer{
+    background-color: var(--fifth);
+    width: fit-content;
+    padding:15px;
+    border-radius: 5px;
+}
+.mytodos-div{
+    display: flex;
+    flex-direction: column;
+}
+.input-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+
+}
+input{
+    outline: none;
+    width: 100%;
+    height: 2rem;
+    border:none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.btn{
+    width: 5rem;
+    height: 2rem;
+    border: none;
+    background-color: black;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+p{
+    text-transform: capitalize;
+    overflow: scroll;
+    width: 100%;
+    height: fit-content;
+}
+
+.list-sub{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    width: 100%;
+    max-width: 20rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 2px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace
+}
+h4{
+    background-color: var(--third);
+    text-align: center;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 5px;
+    align-self: center;
+    position: absolute;
+    top: 45px;
+    display: none;
+    animation: prompt .5s ease-out;
+}
+@keyframes prompt {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+.mytick{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    user-select: none;
+    width: 80%;
+
+}
+.notick{
+}
+.display{
+    display: initial;
+    border-radius: 100%;
+}
+.tick{
+    display:none;
+    
+}
+.remove{
+ border-radius: 100%;
+}
+
+/* .mytick p::before{
+    content: '';
+    position: absolutes;
+    background-image: url(Images/notick-circle.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+} */
